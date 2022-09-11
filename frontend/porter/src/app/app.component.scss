@@ -1,0 +1,332 @@
+$c-main-background: #F6F6F6;
+$c-base: #fbfcfd;
+$color-box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.1);
+$c-plain: #fff;
+$c-primary: #cfb680;
+$c-alert-danger: #d25a57;
+$c-primary-text: #162c4b;
+$c-active-border: #B28D45;
+$black: black;
+
+@mixin flexbox($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+
+  @mixin font-bold($color, $font-size) {
+    font-family: "Proxima-Nova-Bold";
+    color: $color;
+    font-size: $font-size;
+  }
+
+  @mixin font($color, $font-size) {
+    font-family: "Proxima-Nova";
+    color: $color;
+    font-size: $font-size;
+  }
+
+  @mixin color-modif() {
+    $colors: (white: #fff,
+        gray: #8a95a4,
+        gray-light: #f3f4f6,
+        red: #d25a57,
+        primary: #cfb680,
+        secondary: #efe7d5,
+      );
+  
+    @each $key,
+    $val in $colors {
+      &--#{"" + $key} {
+        @content ($val);
+      }
+    }
+  }
+
+  .bold-XXL-label {
+    @include font-bold($c-primary-text, 3.6rem);
+  }
+  
+  // font colors
+  
+  .regular-XXS-label,
+  .regular-XS-label,
+  .regular-S-label,
+  .regular-M-label,
+  .regular-L-label,
+  .regular-XL-label,
+  .regular-XXL-label,
+  .bold-XXS-label,
+  .bold-XS-label,
+  .bold-S-label,
+  .bold-M-label,
+  .bold-L-label,
+  .bold-XL-label,
+  .bold-XXL-label,
+  .bold-XXXL-label {
+    @include color-modif() using ($val) {
+      color: $val !important;
+    }
+  }
+
+  .regular-S-label {
+    @include font($c-primary-text, 1.6rem);
+  }
+
+.layout {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $c-main-background;
+    &__wrapper {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    &__container {
+      padding: 0 5rem;
+    }
+    &__router-wrapper {
+      width: 200rem;
+      height: 100%;
+      background-color: $c-base;
+      border-radius: 1.6rem;
+    }
+    &__content {
+      display: flex;
+      justify-content: center;
+      scroll-behavior: smooth;
+      border-radius: 1.6rem;
+      height: 100%;
+      padding: 1rem 5rem;
+      // ?? scroll always visible so content width doesn't change
+      overflow-y: scroll;
+      &--dashboard {
+        flex-direction: row;
+      }
+    }
+  }
+
+.layout-login {
+    height: 100vh;
+    width: 100vw;
+    //background: url("../assets/images/tobingLogo.jpg") center no-repeat;
+    background-color: darkgray;
+    background-size: cover;
+    @include flexbox();
+  }
+
+  .login-wrapper {
+    width: 1200px;
+    height: 700px;
+    border-radius: 1.5rem;
+    display: flex;
+    box-shadow: $color-box-shadow;
+
+    .login-left {
+        //background: url('../assets/images/tobingLogo.jpg') center no-repeat;
+        border-radius: 1.6rem 0 0 1.6rem;
+        width: 50%;
+        background-color: aliceblue;
+        .login-info {
+            padding: 7rem 5rem;
+            @include flexbox($direction: column, $justify: flex-start, $align: flex-start);
+            gap: 2rem;
+
+            .title-separator {
+                border: 1px solid $black;
+                width: 100%;
+            }
+        }
+    }
+
+    .login-right {
+        border-radius: 0 1.6rem 1.6rem 0;
+        background-color: $c-plain;
+        display: flex;
+        align-items: stretch;
+        width: 50%;
+        .login-form {
+            padding: 7rem 3rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .form-title {
+                margin-bottom: 10rem;
+            }
+
+            .register-title {
+                margin-bottom: 2rem;
+            }
+
+            .border {
+                width: 250px;
+                background-color: $c-primary;
+                border-radius: 0.5rem;
+                height: 0.6rem;
+                margin-top: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .buttons-with-space {
+                @include flexbox($justify: space-between);
+            }
+
+            .btn-wrapper {
+                @include flexbox($justify: flex-end);
+            }
+
+            .input-code {
+                width: 100%;
+                letter-spacing: 2rem;
+                padding-left: 0.8rem;
+                border: none;
+            }
+
+            .verification {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+                box-sizing: border-box;
+
+                &__symbol {
+                    border: 0.3rem solid #3B82F4;
+                    width: 6rem;
+                    height: 6rem;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &--in-progress {
+                        border-color: $c-plain #3B82F4 #3B82F4 #3B82F4;
+                        animation-name: rotate;
+                        animation-duration: 5s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                    }
+
+                    &--failed {
+                        border-color: $c-alert-danger;
+                    }
+
+                    .icon-verify {
+                        // background: url('../../assets/images/icons/verify.svg') no-repeat center;
+                        width: 3rem;
+                        height: 2rem;
+                    }
+
+                    .icon-faild {
+                        // background: url('../../assets/images/icons/closeRed.svg') no-repeat center;
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+
+                &__hexagon {
+                    // background: url('../../assets/images/icons/hexagon.svg') no-repeat center;
+                    width: 6rem;
+                    height: 6.9rem;
+                    background-size: 6rem;
+                    margin-left: 0.1rem;
+                    position: relative;
+
+                    &--failed {
+                        // background: url('../../assets/images/icons/hexagonRed.svg') no-repeat center;
+                        background-size: 6rem;
+                    }
+
+                    .icon-verify {
+                        // background: url('../../assets/images/icons/verify.svg') no-repeat center;
+                        width: 3rem;
+                        height: 2rem;
+                        position: absolute;
+                        left: 17px;
+                        top: 24px; // not so good solution
+                    }
+
+                    .icon-faild {
+                        // background: url('../../assets/images/icons/closeRed.svg') no-repeat center;
+                        width: 2.8rem;
+                        height: 2.2rem;
+                        position: absolute;
+                        left: 16px;
+                        top: 24px; // not so good solution
+                    }
+                }
+
+                &__link {
+                    height: 2rem;
+                    width: 0.3rem;
+                    background-color: #3B82F4;
+                    margin-left: 3rem;
+
+                    &--failed {
+                        background-color: $c-alert-danger;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.f {
+    position: relative;
+    margin-bottom: 20px;
+    label {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  
+    input {
+      width: calc(100% - 20px);
+      height: 30px;
+      border: 1px solid #e9e9e9;
+      padding: 0 10px;
+      transition: border-color 0.2s;
+      border-radius: 0.5rem;
+  
+      &.invalid {
+        border-color: $c-alert-danger;
+      }
+  
+      &:focus {
+        border-color: $c-active-border;
+        transition: border-color 0.2s;
+      }
+  
+      &.disabled {
+        background-color: $c-base;
+      }
+    }
+  
+    textarea {
+      width: calc(100% - 20px);
+      height: 70px;
+      border: 1px solid #e9e9e9;
+      padding: 1rem;
+      transition: border-color 0.2s;
+      resize: none;
+      border-radius: 0.5rem;
+      scrollbar-width: thin;
+  
+      &.invalid {
+        border-color: $c-alert-danger;
+      }
+  
+      &:focus {
+        border-color: $c-active-border;
+        transition: border-color 0.2s;
+      }
+      
+      &.disabled {
+        background-color: $c-base;
+      }
+    }
+  }
