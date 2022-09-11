@@ -1,0 +1,156 @@
+.login-wrapper {
+    width: 1200px;
+    height: 700px;
+    border-radius: 1.5rem;
+    display: flex;
+    box-shadow: $color-box-shadow;
+
+    .login-left {
+        //background: url('../assets/images/tobingLogo.jpg') center no-repeat;
+        border-radius: 1.6rem 0 0 1.6rem;
+        width: 50%;
+        background-color: aliceblue;
+        .login-info {
+            padding: 7rem 5rem;
+            @include flexbox($direction: column, $justify: flex-start, $align: flex-start);
+            gap: 2rem;
+
+            .title-separator {
+                border: 1px solid $black;
+                width: 100%;
+            }
+        }
+    }
+
+    .login-right {
+        border-radius: 0 1.6rem 1.6rem 0;
+        background-color: $c-plain;
+        display: flex;
+        align-items: stretch;
+        width: 50%;
+        .login-form {
+            padding: 7rem 3rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .form-title {
+                margin-bottom: 10rem;
+            }
+
+            .register-title {
+                margin-bottom: 2rem;
+            }
+
+            .border {
+                width: 250px;
+                background-color: $c-primary;
+                border-radius: 0.5rem;
+                height: 0.6rem;
+                margin-top: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .buttons-with-space {
+                @include flexbox($justify: space-between);
+            }
+
+            .btn-wrapper {
+                @include flexbox($justify: flex-end);
+            }
+
+            .input-code {
+                width: 100%;
+                letter-spacing: 2rem;
+                padding-left: 0.8rem;
+                border: none;
+            }
+
+            .verification {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+                box-sizing: border-box;
+
+                &__symbol {
+                    border: 0.3rem solid #3B82F4;
+                    width: 6rem;
+                    height: 6rem;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &--in-progress {
+                        border-color: $c-plain #3B82F4 #3B82F4 #3B82F4;
+                        animation-name: rotate;
+                        animation-duration: 5s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                    }
+
+                    &--failed {
+                        border-color: $c-alert-danger;
+                    }
+
+                    .icon-verify {
+                        // background: url('../../assets/images/icons/verify.svg') no-repeat center;
+                        width: 3rem;
+                        height: 2rem;
+                    }
+
+                    .icon-faild {
+                        // background: url('../../assets/images/icons/closeRed.svg') no-repeat center;
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+
+                &__hexagon {
+                    // background: url('../../assets/images/icons/hexagon.svg') no-repeat center;
+                    width: 6rem;
+                    height: 6.9rem;
+                    background-size: 6rem;
+                    margin-left: 0.1rem;
+                    position: relative;
+
+                    &--failed {
+                        // background: url('../../assets/images/icons/hexagonRed.svg') no-repeat center;
+                        background-size: 6rem;
+                    }
+
+                    .icon-verify {
+                        // background: url('../../assets/images/icons/verify.svg') no-repeat center;
+                        width: 3rem;
+                        height: 2rem;
+                        position: absolute;
+                        left: 17px;
+                        top: 24px; // not so good solution
+                    }
+
+                    .icon-faild {
+                        // background: url('../../assets/images/icons/closeRed.svg') no-repeat center;
+                        width: 2.8rem;
+                        height: 2.2rem;
+                        position: absolute;
+                        left: 16px;
+                        top: 24px; // not so good solution
+                    }
+                }
+
+                &__link {
+                    height: 2rem;
+                    width: 0.3rem;
+                    background-color: #3B82F4;
+                    margin-left: 3rem;
+
+                    &--failed {
+                        background-color: $c-alert-danger;
+                    }
+                }
+            }
+        }
+    }
+}

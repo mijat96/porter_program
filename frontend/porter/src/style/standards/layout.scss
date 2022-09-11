@@ -1,0 +1,44 @@
+.layout {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $c-main-background;
+    &__wrapper {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    &__container {
+      padding: 0 5rem;
+    }
+    &__router-wrapper {
+      width: 200rem;
+      height: 100%;
+      background-color: $c-base;
+      border-radius: 1.6rem;
+    }
+    &__content {
+      display: flex;
+      justify-content: center;
+      scroll-behavior: smooth;
+      border-radius: 1.6rem;
+      height: 100%;
+      padding: 1rem 5rem;
+      // ?? scroll always visible so content width doesn't change
+      overflow-y: scroll;
+      &--dashboard {
+        flex-direction: row;
+      }
+    }
+  }
+
+.layout-login {
+    height: 100vh;
+    width: 100vw;
+    //background: url("../assets/images/tobingLogo.jpg") center no-repeat;
+    background-color: darkgray;
+    background-size: cover;
+    @include flexbox();
+  }

@@ -1,0 +1,35 @@
+@mixin flexbox($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+
+@mixin font-bold($color, $font-size) {
+    font-family: "Proxima-Nova-Bold";
+    color: $color;
+    font-size: $font-size;
+}
+
+@mixin font($color, $font-size) {
+    font-family: "Proxima-Nova";
+    color: $color;
+    font-size: $font-size;
+}
+
+@mixin color-modif() {
+    $colors: (white: #fff,
+        gray: #8a95a4,
+        gray-light: #f3f4f6,
+        red: #d25a57,
+        primary: #cfb680,
+        secondary: #efe7d5,
+        );
+
+    @each $key,
+    $val in $colors {
+        &--#{"" + $key} {
+        @content ($val);
+        }
+    }
+}

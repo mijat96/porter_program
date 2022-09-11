@@ -1,0 +1,29 @@
+.bold-XXL-label {
+    @include font-bold($c-primary-text, 3.6rem);
+  }
+  
+  // font colors
+  
+  .regular-XXS-label,
+  .regular-XS-label,
+  .regular-S-label,
+  .regular-M-label,
+  .regular-L-label,
+  .regular-XL-label,
+  .regular-XXL-label,
+  .bold-XXS-label,
+  .bold-XS-label,
+  .bold-S-label,
+  .bold-M-label,
+  .bold-L-label,
+  .bold-XL-label,
+  .bold-XXL-label,
+  .bold-XXXL-label {
+    @include color-modif() using ($val) {
+      color: $val !important;
+    }
+  }
+
+  .regular-S-label {
+    @include font($c-primary-text, 1.6rem);
+  }
