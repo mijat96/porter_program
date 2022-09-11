@@ -8,13 +8,4 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class AppComponent {
   title = 'porter';
-  loginForm: FormGroup;
-
-  constructor(private fb: FormBuilder){
-    this.loginForm = this.fb.group({
-      username: ['', Validators.required],
-      password: ['', Validators.required],
-      recaptcha: ''
-    })
-  }
 }
