@@ -102,20 +102,17 @@
                     }
 
                     .icon-verify {
-                        // background: url('../../assets/images/icons/verify.svg') no-repeat center;
                         width: 3rem;
                         height: 2rem;
                     }
 
                     .icon-faild {
-                        // background: url('../../assets/images/icons/closeRed.svg') no-repeat center;
                         width: 3rem;
                         height: 3rem;
                     }
                 }
 
                 &__hexagon {
-                    // background: url('../../assets/images/icons/hexagon.svg') no-repeat center;
                     width: 6rem;
                     height: 6.9rem;
                     background-size: 6rem;
@@ -123,12 +120,10 @@
                     position: relative;
 
                     &--failed {
-                        // background: url('../../assets/images/icons/hexagonRed.svg') no-repeat center;
                         background-size: 6rem;
                     }
 
                     .icon-verify {
-                        // background: url('../../assets/images/icons/verify.svg') no-repeat center;
                         width: 3rem;
                         height: 2rem;
                         position: absolute;
@@ -137,7 +132,6 @@
                     }
 
                     .icon-faild {
-                        // background: url('../../assets/images/icons/closeRed.svg') no-repeat center;
                         width: 2.8rem;
                         height: 2.2rem;
                         position: absolute;
