@@ -3,7 +3,7 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: $c-main-background;
+    background-color: darkgray;
     &__wrapper {
       display: flex;
       justify-content: flex-start;
@@ -26,8 +26,6 @@
       border-radius: 1.6rem;
       height: 100%;
       padding: 1rem 5rem;
-      // ?? scroll always visible so content width doesn't change
-      overflow-y: scroll;
       &--dashboard {
         flex-direction: row;
       }

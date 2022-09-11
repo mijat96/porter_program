@@ -6,25 +6,31 @@
     box-shadow: $color-box-shadow;
 
     .login-left {
-        //background: url('../assets/images/tobingLogo.jpg') center no-repeat;
         border-radius: 1.6rem 0 0 1.6rem;
         width: 50%;
-        background-color: aliceblue;
+        background-color: $c-plain;
         .login-info {
-            padding: 7rem 5rem;
+            padding: 5rem 5rem;
             @include flexbox($direction: column, $justify: flex-start, $align: flex-start);
-            gap: 2rem;
+            gap: 1rem;
 
             .title-separator {
                 border: 1px solid $black;
                 width: 100%;
             }
+
+        }
+        .background {
+            background: url('../../assets/images/tobingLogo.jpg') center no-repeat;
+            background-size: cover;
+            height: 50%;
+            border-radius: 1.6rem 0 0 1.6rem;
         }
     }
 
     .login-right {
         border-radius: 0 1.6rem 1.6rem 0;
-        background-color: $c-plain;
+        background-color: #afbccd;
         display: flex;
         align-items: stretch;
         width: 50%;
