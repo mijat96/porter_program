@@ -3,6 +3,11 @@
 .f {
     position: relative;
     margin-bottom: 20px;
+
+    &__home{
+      margin-top: 50px;
+    }
+
     label {
       display: inline-block;
       margin-bottom: 5px;

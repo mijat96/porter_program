@@ -27,3 +27,7 @@
   .regular-S-label {
     @include font($c-primary-text, 1.6rem);
   }
+
+  .home{
+    margin-right: 10px;
+  }
