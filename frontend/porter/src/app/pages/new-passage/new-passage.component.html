@@ -16,28 +16,28 @@
                         <div class="home-page home-page__new-passage">
                             <div class="bold-XXL-label">Novi Ulazak</div>
                             <div class="scroll">
-                                <div class="f f__home">
+                                <div class="f f__home f__input">
                                     <label for="control"
                                         class="regular-S-label regular-S-label--gray-dark home required">
                                         Registracija Vozila
                                     </label>
                                     <input type="text" class="regular-S-label" />
                                 </div>
-                                <div class="f f__home">
+                                <div class="f f__home f__input">
                                     <label for="control"
                                         class="regular-S-label regular-S-label--gray-dark home required">
                                         Vreme Ulaza
                                     </label>
                                     <input type="time" class="regular-S-label" />
                                 </div>
-                                <div class="f f__home">
+                                <div class="f f__home f__input">
                                     <label for="control"
                                         class="regular-S-label regular-S-label--gray-dark home required">
                                         Vrsta unetog materijala
                                     </label>
                                     <input type="text" class="regular-S-label" />
                                 </div>
-                                <div class="f f__home">
+                                <div class="f f__home f__input">
                                     <label for="control"
                                         class="regular-S-label regular-S-label--gray-dark home required">
                                         Ime i Prezima Vozača
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="new-passage-button-div">
-                            <button class="button button--primary" type="button">
+                            <button class="button button--primary" type="button" (click)="onSave()">
                                 <span class="regular-S-label regular-S-label--black">Save</span>
                             </button>
                         </div>
