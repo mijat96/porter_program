@@ -1,1 +1,47 @@
-<p>list-passages works!</p>
+<div class="layout layout__wrapper">
+    <div class="layout__container">
+    </div>
+    <div class="layout__content">
+        <div class="layout__router-wrapper">
+            <div class="layout-login">
+                <div class="login-wrapper">
+                    <div class="login-left width--50">
+                        <div class="login-info">
+                            <div class="bold-XXL-label bold-XXL-label--black">Portir Program</div>
+                            <div class="title-separator"></div>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div class="login-right width--50 login-right__new-passage">
+                        <div class="home-page home-page__new-passage">
+                            <div class="bold-XXL-label">Pregled Ulazaka</div>
+                            <div class="scroll">
+                                <div *ngFor="let passage of listOfPassages">
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Broj Registracije: {{passage.plateNumber}}
+                                        </label>
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Vreme Ulaska: {{passage.inTime | date:'shortDate'}}
+                                        </label><br>
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Ime Vozača: {{passage.driverName}}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-passage-button-div">
+                            <button class="button button--primary" type="button" (click)="back()">
+                                <span class="regular-S-label regular-S-label--black">Nazad</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
