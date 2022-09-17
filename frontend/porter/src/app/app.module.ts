@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NewPassageComponent } from './pages/new-passage/new-passage.component';
 import { FinishPassageComponent } from './pages/finish-passage/finish-passage.component';
+import { ListPassagesComponent } from './pages/list-passages/list-passages.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FinishPassageComponent } from './pages/finish-passage/finish-passage.co
     HomeComponent,
     LoginComponent,
     NewPassageComponent,
-    FinishPassageComponent
+    FinishPassageComponent,
+    ListPassagesComponent
   ],
   imports: [
     BrowserModule,

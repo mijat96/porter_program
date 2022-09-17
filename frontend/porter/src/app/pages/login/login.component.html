@@ -7,33 +7,33 @@
         <div class="login-wrapper">
           <div class="login-left width--50">
             <div class="login-info">
-              <div class="bold-XXL-label bold-XXL-label--black">Porter Program</div>
+              <div class="bold-XXL-label bold-XXL-label--black">Portir Program</div>
               <div class="title-separator"></div>
             </div>
             <div class="background"></div>
           </div>
           <div class="login-right width--50">
             <div class="login-form">
-              <div class="bold-XXL-label">Login</div>
+              <div class="bold-XXL-label">Ulaz</div>
 
               <form [formGroup]="loginForm">
                 <div class="f">
                   <label for="control" class="regular-S-label regular-S-label--gray-dark required">
-                    User Name
+                    Korisničko ime
                   </label>
-                  <input type="text" formControlName="username" class="regular-S-label" placeholder="Enter User Name" />
+                  <input type="text" formControlName="username" class="regular-S-label" placeholder="Unesite Korisničko Ime" />
                 </div>
                 <div class="f">
                   <label for="control" class="regular-S-label regular-S-label--gray-dark required">
-                    Password
+                    Lozinka
                   </label>
                   <input type="password" formControlName="password" class="regular-S-label"
-                    placeholder="Enter Password" />
+                    placeholder="Unesite Lozinku" />
                 </div>
               </form>
               <div class="buttons-with-space">
                 <button class="button button--primary" type="button" (click)="login()">
-                  <span class="regular-S-label regular-S-label--black">Login</span>
+                  <span class="regular-S-label regular-S-label--black">Uloguj se</span>
                 </button>
               </div>
             </div>
