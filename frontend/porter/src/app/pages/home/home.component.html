@@ -19,7 +19,7 @@
                                 <label for="control" class="regular-S-label regular-S-label--gray-dark home required">
                                     Novi Ulazak
                                 </label>
-                                <button class="button button--primary" type="button" (click)="newPassage()">
+                                <button class="button button--primary" type="button" (click)="route('new-passage')">
                                     <span class="regular-S-label regular-S-label--black">New</span>
                                 </button>
                             </div>
@@ -27,7 +27,7 @@
                                 <label for="control" class="regular-S-label regular-S-label--gray-dark home required">
                                     Zavrsi Ulazak
                                 </label>
-                                <button class="button button--primary" type="button">
+                                <button class="button button--primary" type="button" (click)="route('finish-passage')">
                                     <span class="regular-S-label regular-S-label--black">Continue</span>
                                 </button>
                             </div>

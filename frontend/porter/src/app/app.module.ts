@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NewPassageComponent } from './pages/new-passage/new-passage.component';
+import { FinishPassageComponent } from './pages/finish-passage/finish-passage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    NewPassageComponent
+    NewPassageComponent,
+    FinishPassageComponent
   ],
   imports: [
     BrowserModule,

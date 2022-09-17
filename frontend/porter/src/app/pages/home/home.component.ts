@@ -13,8 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  newPassage(){
-    this.router.navigate(['/new-passage']);
+  route(componentName: string){
+    this.router.navigate(['/' + componentName]);
   }
 
 }
