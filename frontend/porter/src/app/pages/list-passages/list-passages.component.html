@@ -15,19 +15,25 @@
                     <div class="login-right width--50 login-right__new-passage">
                         <div class="home-page home-page__new-passage">
                             <div class="bold-XXL-label">Pregled Ulazaka</div>
-                            <div class="scroll">
+                            <div class="scroll_both">
                                 <div *ngFor="let passage of listOfPassages">
-                                    <div class="f f__home f__input">
-                                        <label for="control"
-                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                    <div class="table">
+                                        <label>
                                             Broj Registracije: {{passage.plateNumber}}
                                         </label>
-                                        <label for="control"
-                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                        <label>
                                             Vreme Ulaska: {{passage.inTime | date:'shortDate'}}
                                         </label><br>
-                                        <label for="control"
-                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                        <label>
+                                            Ime Vozača: {{passage.driverName}}
+                                        </label>
+                                        <label>
+                                            Ime Vozača: {{passage.driverName}}
+                                        </label>
+                                        <label>
+                                            Ime Vozača: {{passage.driverName}}
+                                        </label>
+                                        <label>
                                             Ime Vozača: {{passage.driverName}}
                                         </label>
                                     </div>
