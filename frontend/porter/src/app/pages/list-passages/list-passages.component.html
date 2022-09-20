@@ -15,17 +15,20 @@
                     <div class="login-right width--50 login-right__new-passage">
                         <div class="home-page home-page__new-passage">
                             <div class="bold-XXL-label">Pregled Ulazaka</div>
-                            <div class="scroll_both">
-                                <div *ngFor="let passage of listOfPassages">
+                            <div class="scroll_both scroll_both__max_height">
+                                <div *ngFor="let passage of listOfPassages" class="table_wrapper">
                                     <div class="table">
                                         <label>
-                                            Broj Registracije: {{passage.plateNumber}}
+                                            {{passage.plateNumber}} 
+                                            <!-- Broj Registracije:  -->
                                         </label>
                                         <label>
-                                            Vreme Ulaska: {{passage.inTime | date:'shortDate'}}
+                                            {{passage.inTime | date:'shortDate'}}
+                                            <!-- Vreme Ulaska:  -->
                                         </label><br>
                                         <label>
                                             Ime Vozača: {{passage.driverName}}
+                                            <!-- Ime Vozača:  -->
                                         </label>
                                         <label>
                                             Ime Vozača: {{passage.driverName}}
