@@ -16,29 +16,78 @@
                         <div class="home-page home-page__new-passage">
                             <div class="bold-XXL-label">Pregled Ulazaka</div>
                             <div class="scroll_both scroll_both__max_height">
+                                <div  class="table">
+                                    <div>
+                                        <p class="table-element"> 
+                                            Broj Registracije: 
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="table-element">
+                                            Vreme Ulaska: 
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="table-element">
+                                            Vreme Ulaska: 
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="table-element">
+                                            Vreme Ulaska: 
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="table-element">
+                                            Vreme Ulaska: 
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="table-element">
+                                            Vreme Ulaska: 
+                                        </p>
+                                    </div>
+                                </div>
                                 <div *ngFor="let passage of listOfPassages" class="table_wrapper">
                                     <div class="table">
-                                        <label>
-                                            {{passage.plateNumber}} 
-                                            <!-- Broj Registracije:  -->
-                                        </label>
-                                        <label>
-                                            {{passage.inTime | date:'shortDate'}}
-                                            <!-- Vreme Ulaska:  -->
-                                        </label><br>
-                                        <label>
-                                            Ime Vozača: {{passage.driverName}}
-                                            <!-- Ime Vozača:  -->
-                                        </label>
-                                        <label>
-                                            Ime Vozača: {{passage.driverName}}
-                                        </label>
-                                        <label>
-                                            Ime Vozača: {{passage.driverName}}
-                                        </label>
-                                        <label>
-                                            Ime Vozača: {{passage.driverName}}
-                                        </label>
+                                        <div>
+                                            <p class="table-element Main-Text">
+                                                {{passage.plateNumber}} 
+                                                <!-- Broj Registracije:  -->
+                                            </p>
+                                            <div class="Extra-Text">
+                                                <p>
+                                                    {{passage.plateNumber}}hsbdjahbdhs
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="table-element">
+                                                {{passage.inTime | date:'shortDate'}}
+                                                <!-- Vreme Ulaska:  -->
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                                <!-- Ime Vozača:  -->
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
