@@ -4,6 +4,10 @@
     justify-content: flex-start;
     width: 80%;
     white-space: nowrap;
+
+    &__header{
+        margin-bottom: 15px;
+    }
 }
 
 .table_wrapper{
@@ -15,6 +19,24 @@
     white-space: nowrap;
     width: 100px;
     overflow: hidden;
+}
+
+.first-element{
+    background: rgb(147, 158, 157);
+    border-radius: 0.6rem 0 0 0.6rem;
+}
+
+.last-element{
+    background: aliceblue;
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+
+.even-element{
+    background: aliceblue;
+}
+
+.odd-element{
+    background: rgb(147, 158, 157);
 }
 
 .Extra-Text {

@@ -5,52 +5,92 @@
         <div class="layout__router-wrapper">
             <div class="layout-login">
                 <div class="login-wrapper">
-                    <div class="login-left width--50">
+                    <!-- <div class="login-left width--50">
                         <div class="login-info">
                             <div class="bold-XXL-label bold-XXL-label--black">Portir Program</div>
                             <div class="title-separator"></div>
                         </div>
                         <div class="background"></div>
-                    </div>
-                    <div class="login-right width--50 login-right__new-passage">
-                        <div class="home-page home-page__new-passage">
-                            <div class="bold-XXL-label">Pregled Ulazaka</div>
+                    </div> -->
+                    <div class="full-page-list">
+                        <div class="home-page__new-passage">
+                            <div class="bold-XXL-label bold-XXL-label__center">Pregled Ulazaka</div>
                             <div class="scroll_both scroll_both__max_height">
-                                <div  class="table">
-                                    <div>
+                                <div  class="table table__header">
+                                    <div class="first-element">
                                         <p class="table-element"> 
-                                            Broj Registracije: 
+                                             RB: 
                                         </p>
                                     </div>
-                                    <div>
+                                    <div class="even-element">
+                                        <p class="table-element"> 
+                                             Smena: 
+                                        </p>
+                                    </div>
+                                    <div class="odd-element">
+                                        <p class="table-element"> 
+                                             Registracija: 
+                                        </p>
+                                    </div>
+                                    <div class="even-element">
+                                        <p class="table-element">
+                                            Ulazak: 
+                                        </p>
+                                    </div>
+                                    <div class="odd-element">
+                                        <p class="table-element">
+                                            Izlazak: 
+                                        </p>
+                                    </div>
+                                    <div class="even-element">
                                         <p class="table-element">
                                             Vreme Ulaska: 
                                         </p>
                                     </div>
-                                    <div>
+                                    <div class="odd-element">
                                         <p class="table-element">
-                                            Vreme Ulaska: 
+                                            Vrsta unetog materijala: 
                                         </p>
                                     </div>
-                                    <div>
+                                    <div class="even-element">
                                         <p class="table-element">
-                                            Vreme Ulaska: 
+                                            Primedba: 
                                         </p>
                                     </div>
-                                    <div>
+                                    <div class="odd-element">
                                         <p class="table-element">
-                                            Vreme Ulaska: 
+                                            Zabrane: 
                                         </p>
                                     </div>
-                                    <div>
+                                    <div class="even-element">
                                         <p class="table-element">
-                                            Vreme Ulaska: 
+                                            Ime i Prezime: 
+                                        </p>
+                                    </div>
+                                    <div class="odd-element">
+                                        <p class="table-element">
+                                            Broj LK/Pasoša: 
+                                        </p>
+                                    </div>
+                                    <div class="even-element">
+                                        <p class="table-element">
+                                            Vozila: 
+                                        </p>
+                                    </div>
+                                    <div class="odd-element">
+                                        <p class="table-element">
+                                            Radnici: 
+                                        </p>
+                                    </div>
+                                    <div class="last-element">
+                                        <p class="table-element">
+                                            Primedba: 
                                         </p>
                                     </div>
                                 </div>
                                 <div *ngFor="let passage of listOfPassages" class="table_wrapper">
                                     <div class="table">
-                                        <div>
+                                        <div class="first-element">
                                             <p class="table-element Main-Text">
                                                 {{passage.plateNumber}} 
                                                 <!-- Broj Registracije:  -->
@@ -61,29 +101,69 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div>
+                                        <div class="even-element">
                                             <p class="table-element">
                                                 {{passage.inTime | date:'shortDate'}}
                                                 <!-- Vreme Ulaska:  -->
                                             </p>
                                         </div>
-                                        <div>
+                                        <div class="odd-element">
                                             <p class="table-element">
                                                 Ime Vozača: {{passage.driverName}}
                                                 <!-- Ime Vozača:  -->
                                             </p>
                                         </div>
-                                        <div>
+                                        <div class="even-element">
                                             <p class="table-element">
                                                 Ime Vozača: {{passage.driverName}}
                                             </p>
                                         </div>
-                                        <div>
+                                        <div class="odd-element">
                                             <p class="table-element">
                                                 Ime Vozača: {{passage.driverName}}
                                             </p>
                                         </div>
-                                        <div>
+                                        <div class="even-element">
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
+                                        <div class="odd-element">
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
+                                        <div class="even-element">
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
+                                        <div class="odd-element">
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
+                                        <div class="even-element">
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
+                                        <div class="odd-element">
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
+                                        <div class="even-element">
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
+                                        <div class="odd-element">
+                                            <p class="table-element">
+                                                Ime Vozača: {{passage.driverName}}
+                                            </p>
+                                        </div>
+                                        <div class="last-element">
                                             <p class="table-element">
                                                 Ime Vozača: {{passage.driverName}}
                                             </p>

@@ -63,6 +63,149 @@ export class ListPassagesComponent implements OnInit {
       driverName: "Ivan",
       driverSurname: "Petrovic"
     } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
+    {
+      id: 5, 
+      shift: "prva", 
+      plateNumber: 'ŠA015BB', 
+      inTime: new Date(), 
+      outTime: new Date(), 
+      typeInMaterial: "metal", 
+      remark: "nema", 
+      driverName: "Ivan",
+      driverSurname: "Petrovic"
+    } as Passge,
   ];
 
   constructor() { }

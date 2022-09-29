@@ -1,5 +1,8 @@
 .bold-XXL-label {
     @include font-bold($c-primary-text, 3.6rem);
+    &__center{
+      text-align: center;
+    }
   }
   
   // font colors
