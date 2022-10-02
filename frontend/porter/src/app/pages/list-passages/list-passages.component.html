@@ -89,7 +89,7 @@
                                     </div>
                                 </div>
                                 <div *ngFor="let passage of listOfPassages" class="table_wrapper">
-                                    <div class="table">
+                                    <div class="table" (click)="passageDetails(passage)">
                                         <div class="first-element">
                                             <p class="table-element Main-Text">
                                                 {{passage.plateNumber}} 

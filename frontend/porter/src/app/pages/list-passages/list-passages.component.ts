@@ -215,6 +215,9 @@ export class ListPassagesComponent implements OnInit {
 
   back(){}
 
+  passageDetails(passage: Passge){
+    console.log(passage);
+  }
 }
 
 interface Passge{

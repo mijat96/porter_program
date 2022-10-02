@@ -76,8 +76,6 @@
                 display: contents !important;
                 width: 80% !important;
             }
-
-
         }
 
         .new-passage-button-div{
@@ -90,6 +88,14 @@
             flex-direction: column;
         }
 
+        &__new-passage-copmonent{
+            flex-direction: column;
+        }
+        
+        &__new-passage-finish-copmonent{
+            display: block;
+            flex-direction: column;
+        }
         .login-form {
             padding: 7rem 3rem;
             width: 100%;
