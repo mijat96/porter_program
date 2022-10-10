@@ -51,10 +51,30 @@ router.post('/passage/new', (req, res) => {
         if (err) {
             console.log(err);
         } else {
-            //console.log(newlyCreatedPassage);
-            res.send('OK');
+            res.send(newlyCreatedPassage);
         }
     });
+    
+});
+
+router.post('/passage/edit', (req, res) => {
+    console.log(req.body.id);
+    Passage.findOneAndUpdate({ id: req.body.id },
+        {
+            $set: {
+                shift: req.body.shift, plateNumber: req.body.plateNumber, inTime: req.body.inTime,
+                outTime: req.body.outTime, typeInMaterial: req.body.typeInMaterial, 
+                typeOutMaterial: req.body.typeOutMaterial, remark: req.body.remark, ban: req.body.ban,
+                driverName: req.body.driverName, driverSurname: req.body.driverSurname
+            }
+        },
+        (err, editedPassage) => {
+            if (err) {
+                console.log(err);
+            } else {
+                res.send(editedPassage);
+            }
+        });
     
 });
 
