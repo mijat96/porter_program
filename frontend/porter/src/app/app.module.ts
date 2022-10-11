@@ -9,6 +9,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { NewPassageComponent } from './pages/new-passage/new-passage.component';
 import { FinishPassageComponent } from './pages/finish-passage/finish-passage.component';
 import { ListPassagesComponent } from './pages/list-passages/list-passages.component';
+import { LoginService } from './services/login.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,10 @@ import { ListPassagesComponent } from './pages/list-passages/list-passages.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

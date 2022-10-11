@@ -41,12 +41,17 @@ router.post('/account/login', (req, res) => {
             res.send(404);
         }
 
-        if (loggedUser.password == req.body.password) {
-            console.log(req.body.password)
-            jwt.sign({ user: loggedUser.username, role: loggedUser.role }, 'secretkey', (err, token) => {
-                res.json({token});
-            });
-        }    
+        try{
+            if (loggedUser.password == req.body.password) {
+                console.log(req.body.password)
+                jwt.sign({ user: loggedUser.username, role: loggedUser.role }, 'secretkey', (err, token) => {
+                    res.json({token});
+                });
+            }    
+        }catch(e){
+            console.log(e);
+            res.send(501);
+        }
     });
 });
 

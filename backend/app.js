@@ -6,8 +6,8 @@ var cors = require('cors');
 const app = express();
 var server = http.createServer(app);
 const postsRoute = require('./routes/posts');
-var User = require("./model/userSchema");
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use('/api', postsRoute);
 
