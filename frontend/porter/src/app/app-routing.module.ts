@@ -9,7 +9,7 @@ import { NewPassageComponent } from './pages/new-passage/new-passage.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: LoginComponent
   }
   ,{
     path: 'login',
