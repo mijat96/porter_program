@@ -1,6 +1,6 @@
-import { Passge } from "src/app/models/passage-model";
+import { Passage } from "src/app/models/passage-model";
 
-export const listOfPassages: Passge[] = 
+export const listOfPassages: Passage[] = 
 [
   {
     id: 1, 
@@ -12,7 +12,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Petar",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 2, 
     shift: "druga", 
@@ -23,7 +23,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Stefan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 3, 
     shift: "prva", 
@@ -34,7 +34,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Igor",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 4, 
     shift: "prva", 
@@ -45,7 +45,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Milos",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -56,7 +56,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -67,7 +67,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -78,7 +78,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -89,7 +89,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -100,7 +100,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -111,7 +111,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -122,7 +122,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -133,7 +133,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -144,7 +144,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -155,7 +155,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -166,7 +166,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -177,7 +177,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -188,7 +188,7 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
   {
     id: 5, 
     shift: "prva", 
@@ -199,5 +199,5 @@ export const listOfPassages: Passge[] =
     remark: "nema", 
     driverName: "Ivan",
     driverSurname: "Petrovic"
-  } as Passge,
+  } as Passage,
 ];

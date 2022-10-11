@@ -16,34 +16,36 @@
                         <div class="home-page home-page__new-passage">
                             <div class="bold-XXL-label">Novi Ulazak</div>
                             <div class="scroll">
-                                <div class="f f__home f__input">
-                                    <label for="control"
-                                        class="regular-S-label regular-S-label--gray-dark home required">
-                                        Registracija Vozila
-                                    </label>
-                                    <input type="text" class="regular-S-label" />
-                                </div>
-                                <div class="f f__home f__input">
-                                    <label for="control"
-                                        class="regular-S-label regular-S-label--gray-dark home required">
-                                        Vreme Ulaza
-                                    </label>
-                                    <input type="time" class="regular-S-label" />
-                                </div>
-                                <div class="f f__home f__input">
-                                    <label for="control"
-                                        class="regular-S-label regular-S-label--gray-dark home required">
-                                        Vrsta unetog materijala
-                                    </label>
-                                    <input type="text" class="regular-S-label" />
-                                </div>
-                                <div class="f f__home f__input">
-                                    <label for="control"
-                                        class="regular-S-label regular-S-label--gray-dark home required">
-                                        Ime i Prezime Vozača
-                                    </label>
-                                    <input type="text" class="regular-S-label" />
-                                </div>
+                                <form [formGroup]="passageForm">
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Registracija Vozila
+                                        </label>
+                                        <input type="text" formControlName="plateNumber" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Vreme Ulaza
+                                        </label>
+                                        <input type="datetime-local" formControlName="inTime" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Vrsta unetog materijala
+                                        </label>
+                                        <input type="text" formControlName="typeInMaterial" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Ime Vozača
+                                        </label>
+                                        <input type="text" formControlName="driverName" class="regular-S-label" />
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <div class="new-passage-button-div">

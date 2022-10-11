@@ -11,6 +11,7 @@ import { FinishPassageComponent } from './pages/finish-passage/finish-passage.co
 import { ListPassagesComponent } from './pages/list-passages/list-passages.component';
 import { LoginService } from './services/login.service';
 import { HttpClientModule } from '@angular/common/http';
+import { PassageService } from './services/passage.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [LoginService],
+  providers: [LoginService, PassageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

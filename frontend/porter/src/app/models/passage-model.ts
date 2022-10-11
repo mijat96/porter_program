@@ -1,4 +1,4 @@
-export interface Passge{
+export interface Passage{
     id: number;
     shift: string;
     plateNumber: string;
