@@ -3,7 +3,7 @@ import { Passage } from "src/app/models/passage-model";
 export const listOfPassages: Passage[] = 
 [
   {
-    id: 1, 
+    _id: 1, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -14,7 +14,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 2, 
+    _id: 2, 
     shift: "druga", 
     plateNumber: 'ŠA016BB', 
     inTime: new Date(), 
@@ -25,7 +25,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 3, 
+    _id: 3, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -36,7 +36,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 4, 
+    _id: 4, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -47,7 +47,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -58,7 +58,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -69,7 +69,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -80,7 +80,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -91,7 +91,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -102,7 +102,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -113,7 +113,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -124,7 +124,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -135,7 +135,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -146,7 +146,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -157,7 +157,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -168,7 +168,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -179,7 +179,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 
@@ -190,7 +190,7 @@ export const listOfPassages: Passage[] =
     driverSurname: "Petrovic"
   } as Passage,
   {
-    id: 5, 
+    _id: 5, 
     shift: "prva", 
     plateNumber: 'ŠA015BB', 
     inTime: new Date(), 

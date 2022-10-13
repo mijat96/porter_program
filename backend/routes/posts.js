@@ -83,7 +83,7 @@ router.post('/passage/new', (req, res) => {
 });
 
 router.post('/passage/edit', (req, res) => {
-    Passage.findOneAndUpdate({ id: req.body.id },
+    Passage.findOneAndUpdate({ _id: req.body._id },
         {
             $set: {
                 shift: req.body.shift, plateNumber: req.body.plateNumber, inTime: req.body.inTime,

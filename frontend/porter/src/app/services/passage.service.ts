@@ -19,8 +19,10 @@ export class PassageService {
         return this.http.post<Passage>(url, passageModel);
     }
 
-    finish(){
-            
+    finish(passageModel: Passage): Observable<Passage> {
+        const url = this.apiUrl + '/passage/edit';
+
+        return this.http.post<Passage>(url, passageModel);
     }
 
     getList(): Observable<Passage[]> {

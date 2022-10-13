@@ -20,7 +20,19 @@ export class ListPassagesComponent implements OnInit {
   }
 
   passageDetails(passage: Passage){
-    console.log(passage);
+    this.router.navigate(['/finish-passage'], {queryParams: { 
+      _id: passage._id,
+      shift: passage.shift,
+      plateNumber: passage.plateNumber,
+      inTime: passage.inTime,
+      outTime: passage.outTime,
+      typeInMaterial: passage.typeInMaterial,
+      typeOutMaterial: passage.typeOutMaterial,
+      remark: passage.remark,
+      ban: passage.ban,
+      driverName: passage.driverName,
+      driverSurname: passage.driverSurname
+    }});
   }
 
   route(componentName: string){

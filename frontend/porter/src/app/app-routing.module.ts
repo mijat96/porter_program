@@ -25,7 +25,8 @@ const routes: Routes = [
   },
   {
     path: 'finish-passage',
-    component: FinishPassageComponent
+    component: FinishPassageComponent,
+    pathMatch: 'full'
   }
   ,
   {
