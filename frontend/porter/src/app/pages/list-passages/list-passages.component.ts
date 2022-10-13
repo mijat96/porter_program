@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Passage } from 'src/app/models/passage-model';
+import { PassageService } from 'src/app/services/passage.service';
 import { listOfPassages } from './passages-dummy';
 
 @Component({
@@ -9,11 +10,13 @@ import { listOfPassages } from './passages-dummy';
   styleUrls: ['./list-passages.component.scss']
 })
 export class ListPassagesComponent implements OnInit {
-  listOfPassages: Passage[] = listOfPassages;
+  listOfPassages: Passage[] = [];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+              private passageService: PassageService) { }
 
   ngOnInit(): void {
+    this.passageService.getList().toPromise().then(x => this.listOfPassages = x || [] as Passage[]);
   }
 
   passageDetails(passage: Passage){

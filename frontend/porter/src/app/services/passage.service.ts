@@ -23,5 +23,11 @@ export class PassageService {
             
     }
 
+    getList(): Observable<Passage[]> {
+        const url = this.apiUrl + '/passage/list';
+
+        return this.http.get<Passage[]>(url);
+    }
+
 
 }

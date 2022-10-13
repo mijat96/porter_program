@@ -103,4 +103,17 @@ router.post('/passage/edit', (req, res) => {
     
 });
 
+router.get('/passage/list', (req, res) => {
+    console.log(req.body);
+    
+    Passage.find({}, function (err, result) {
+        if (err) 
+            console.log(err);
+
+        console.log(result);
+        res.send(result);
+      })
+    
+});
+
 module.exports = router;
