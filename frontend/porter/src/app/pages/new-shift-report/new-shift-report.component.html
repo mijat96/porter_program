@@ -1,1 +1,103 @@
-<p>new-shift-report works!</p>
+<div class="layout layout__wrapper">
+    <div class="layout__container">
+    </div>
+    <div class="layout__content">
+        <div class="layout__router-wrapper">
+            <div class="layout-login">
+                <div class="login-wrapper">
+                    <div class="login-left width--50">
+                        <div class="login-info">
+                            <div class="bold-XXL-label bold-XXL-label--black">Portir Program</div>
+                            <div class="title-separator"></div>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                    <div class="login-right width--50 login-right__new-passage-copmonent">
+                        <div class="home-page home-page__new-passage">
+                            <div class="bold-XXL-label">Novi Smenski Izveštaj</div>
+                            <div class="scroll">
+                                <form [formGroup]="passageForm">
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Smenu Preuzeli
+                                        </label>
+                                        <input type="text" formControlName="tookOverShift" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Vreme
+                                        </label>
+                                        <input type="time" formControlName="time" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Smena Je Izvršila Primopredaju u Ispravnom Stanju
+                                        </label>
+                                        <input type="checkbox" formControlName="tookOverShiftCorrectCondition" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Događaji / Preduzete mere
+                                        </label>
+                                        <input type="text" formControlName="events" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Posete Kontrolora
+                                        </label>
+                                        <input type="text" formControlName="visitController" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Smena
+                                        </label>
+                                        <input type="text" formControlName="shift" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Uočavanje Prilikom Patrole Danju
+                                        </label>
+                                        <input type="text" formControlName="daytimePatrol" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Uočavanje Prilikom Patrole Noću
+                                        </label>
+                                        <input type="text" formControlName="nighttimePatrol" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Ostale Aktivnosti i Napomene
+                                        </label>
+                                        <input type="text" formControlName="notes" class="regular-S-label" />
+                                    </div>
+                                    <div class="f f__home f__input">
+                                        <label for="control"
+                                            class="regular-S-label regular-S-label--gray-dark home required">
+                                            Vandredni Događaj
+                                        </label>
+                                        <input type="text" formControlName="extraordinaryEvent" class="regular-S-label" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="new-passage-button-div">
+                            <button class="button button--primary" type="button" (click)="onSave()">
+                                <span class="regular-S-label regular-S-label--black">Sačuvaj</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

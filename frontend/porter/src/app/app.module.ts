@@ -13,6 +13,7 @@ import { LoginService } from './services/login.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PassageService } from './services/passage.service';
 import { NewShiftReportComponent } from './pages/new-shift-report/new-shift-report.component';
+import { ShiftReportService } from './services/shift.report.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import { NewShiftReportComponent } from './pages/new-shift-report/new-shift-repo
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [LoginService, PassageService],
+  providers: [LoginService, 
+              PassageService, 
+              ShiftReportService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

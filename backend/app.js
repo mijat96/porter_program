@@ -6,10 +6,12 @@ var cors = require('cors');
 const app = express();
 var server = http.createServer(app);
 const postsRoute = require('./routes/posts');
+const postsShiftReportRoute = require('./routes/postsShiftReport');
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/api', postsRoute);
+app.use('/api', postsShiftReportRoute);
 
 const url = 'mongodb://localhost:27017/PorterData';
 mongoose.connect(url).catch(err => {console.log("Connection error: " + err)});
