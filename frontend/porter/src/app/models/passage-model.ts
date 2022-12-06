@@ -11,4 +11,7 @@ export interface Passage{
     driverName: string;
     driverSurname: string;
     serialNumber: number;
+    idCardOrPassportNumber: number;
+    vehicles: string;
+    workers: string;
   }

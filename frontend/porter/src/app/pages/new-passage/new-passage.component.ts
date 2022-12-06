@@ -27,6 +27,9 @@ export class NewPassageComponent implements OnInit {
       driverName: new FormControl(),
       driverSurname: new FormControl(),
       serialNumber: new FormControl(),
+      idCardOrPassportNumber: new FormControl(),
+      workers: new FormControl(),
+      vehicles: new FormControl(),
     })
   }
 
@@ -55,6 +58,9 @@ export class NewPassageComponent implements OnInit {
       driverName: this.passageForm.controls['driverName'].value,
       driverSurname: this.passageForm.controls['driverSurname'].value,
       serialNumber: this.passageForm.controls['serialNumber'].value,
+      idCardOrPassportNumber: this.passageForm.controls['idCardOrPassportNumber'].value,
+      workers: this.passageForm.controls['workers'].value,
+      vehicles: this.passageForm.controls['vehicles'].value,
     } as Passage;
 
     return newPassage;

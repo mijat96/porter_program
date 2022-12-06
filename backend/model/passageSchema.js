@@ -12,6 +12,9 @@ var passageSchema = new mongoose.Schema({
     driverName: String,
     driverSurname: String,
     serialNumber: Number,
+    idCardOrPassportNumber: Number,
+    workers: String,
+    vehicles: String,
 });
 
 module.exports = mongoose.model("passageSchema", passageSchema);

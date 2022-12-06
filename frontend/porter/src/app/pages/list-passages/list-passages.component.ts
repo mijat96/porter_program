@@ -31,7 +31,11 @@ export class ListPassagesComponent implements OnInit {
       remark: passage.remark,
       ban: passage.ban,
       driverName: passage.driverName,
-      driverSurname: passage.driverSurname
+      driverSurname: passage.driverSurname,
+      serialNumber: passage.serialNumber,
+      idCardOrPassportNumber: passage.idCardOrPassportNumber,
+      workers: passage.workers,
+      vehicles: passage.vehicles,
     }});
   }
 

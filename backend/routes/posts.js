@@ -70,6 +70,9 @@ router.post('/passage/new', (req, res) => {
         driverName: req.body.driverName,
         driverSurname: req.body.driverSurname,
         serialNumber: req.body.serialNumber,
+        idCardOrPassportNumber: req.body.idCardOrPassportNumber,
+        workers: req.body.workers,
+        vehicles: req.body.vehicles,
     }
     
     Passage.create(newPassage, (err, newlyCreatedPassage) => {
@@ -87,10 +90,20 @@ router.post('/passage/edit', (req, res) => {
     Passage.findOneAndUpdate({ _id: req.body._id },
         {
             $set: {
-                shift: req.body.shift, plateNumber: req.body.plateNumber, inTime: req.body.inTime,
-                outTime: req.body.outTime, typeInMaterial: req.body.typeInMaterial, 
-                typeOutMaterial: req.body.typeOutMaterial, remark: req.body.remark, ban: req.body.ban,
-                driverName: req.body.driverName, driverSurname: req.body.driverSurname
+                shift: req.body.shift,
+                plateNumber: req.body.plateNumber,
+                inTime: req.body.inTime,
+                outTime: req.body.outTime,
+                typeInMaterial: req.body.typeInMaterial,
+                typeOutMaterial: req.body.typeOutMaterial,
+                remark: req.body.remark,
+                ban: req.body.ban,
+                driverName: req.body.driverName,
+                driverSurname: req.body.driverSurname,
+                serialNumber: req.body.serialNumber,
+                idCardOrPassportNumber: req.body.idCardOrPassportNumber,
+                workers: req.body.workers,
+                vehicles: req.body.vehicles,
             }
         },
         (err, editedPassage) => {

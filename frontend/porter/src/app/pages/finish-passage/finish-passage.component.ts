@@ -27,8 +27,6 @@ export class FinishPassageComponent implements OnInit {
       typeOutMaterial: new FormControl(),
       remark: new FormControl(),
       ban: new FormControl(),
-      driverName: new FormControl(),
-      driverSurname: new FormControl(),
     })
   }
 
@@ -59,7 +57,11 @@ export class FinishPassageComponent implements OnInit {
       remark: this.passageForm.controls['remark'].value,
       ban: this.passageForm.controls['ban'].value,
       driverName: this.passageForEdit.driverName,
-      driverSurname: this.passageForm.controls['driverSurname'].value,
+      driverSurname: this.passageForEdit.driverSurname,
+      serialNumber: this.passageForEdit.serialNumber,
+      idCardOrPassportNumber: this.passageForEdit.idCardOrPassportNumber,
+      workers: this.passageForEdit.workers,
+      vehicles: this.passageForEdit.vehicles,
     } as Passage;
 
     return newPassage;
