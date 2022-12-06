@@ -17,13 +17,19 @@
 .table-element{
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 100px;
+    width: 180px;
     overflow: hidden;
 }
 
 .first-element{
     background: white;
+    max-width: 50px;
     border-radius: 0.6rem 0 0 0.6rem;
+}
+
+.medium-element{
+    background: white;
+    max-width: 60px;
 }
 
 .last-element{
