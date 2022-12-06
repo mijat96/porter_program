@@ -12,6 +12,7 @@ import { ListPassagesComponent } from './pages/list-passages/list-passages.compo
 import { LoginService } from './services/login.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PassageService } from './services/passage.service';
+import { NewShiftReportComponent } from './pages/new-shift-report/new-shift-report.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PassageService } from './services/passage.service';
     LoginComponent,
     NewPassageComponent,
     FinishPassageComponent,
-    ListPassagesComponent
+    ListPassagesComponent,
+    NewShiftReportComponent
   ],
   imports: [
     BrowserModule,

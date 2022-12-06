@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListPassagesComponent } from './pages/list-passages/list-passages.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NewPassageComponent } from './pages/new-passage/new-passage.component';
+import { NewShiftReportComponent } from './pages/new-shift-report/new-shift-report.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'list-passages',
     component: ListPassagesComponent
+  },
+  {
+    path: 'new-shift-report',
+    component: NewShiftReportComponent
   }
 ];
 
