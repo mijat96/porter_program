@@ -10,7 +10,8 @@ var passageSchema = new mongoose.Schema({
     remark: String,
     ban: String,
     driverName: String,
-    driverSurname: String
+    driverSurname: String,
+    serialNumber: Number,
 });
 
 module.exports = mongoose.model("passageSchema", passageSchema);

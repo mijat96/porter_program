@@ -10,4 +10,5 @@ export interface Passage{
     ban: string;
     driverName: string;
     driverSurname: string;
+    serialNumber: number;
   }

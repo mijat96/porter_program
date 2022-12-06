@@ -68,7 +68,8 @@ router.post('/passage/new', (req, res) => {
         remark: req.body.remark,
         ban: req.body.ban,
         driverName: req.body.driverName,
-        driverSurname: req.body.driverSurname
+        driverSurname: req.body.driverSurname,
+        serialNumber: req.body.serialNumber,
     }
     
     Passage.create(newPassage, (err, newlyCreatedPassage) => {
