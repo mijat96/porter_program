@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddressBookComponent } from './pages/address-book/address-book.component';
 import { FinishPassageComponent } from './pages/finish-passage/finish-passage.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListPassagesComponent } from './pages/list-passages/list-passages.component';
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'new-shift-report',
     component: NewShiftReportComponent
+  },
+  {
+    path: 'address-book',
+    component: AddressBookComponent
   }
 ];
 

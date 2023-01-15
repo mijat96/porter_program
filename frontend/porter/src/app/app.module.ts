@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PassageService } from './services/passage.service';
 import { NewShiftReportComponent } from './pages/new-shift-report/new-shift-report.component';
 import { ShiftReportService } from './services/shift.report.service';
+import { AddressBookComponent } from './pages/address-book/address-book.component';
+import { AddressBookService } from './services/addressBook.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ShiftReportService } from './services/shift.report.service';
     NewPassageComponent,
     FinishPassageComponent,
     ListPassagesComponent,
-    NewShiftReportComponent
+    NewShiftReportComponent,
+    AddressBookComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { ShiftReportService } from './services/shift.report.service';
   ],
   providers: [LoginService, 
               PassageService, 
-              ShiftReportService],
+              ShiftReportService,
+              AddressBookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

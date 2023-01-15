@@ -1,0 +1,70 @@
+<div class="layout layout__wrapper">
+    <div class="layout__container">
+    </div>
+    <div class="layout__content">
+        <div class="layout__router-wrapper">
+            <div class="layout-login">
+                <div class="login-wrapper">
+                    <div class="full-page-list">
+                        <div class="home-page__new-passage">
+                            <div class="bold-XXL-label bold-XXL-label__center">Imenik</div>
+                            <div class="scroll_both scroll_both__max_height scroll_both__marghins">
+                                <div  class="table table__header">
+                                    <div class="even-element">
+                                        <p class="table-element"> 
+                                             Ime: 
+                                        </p>
+                                    </div>
+                                    <div class="odd-element">
+                                        <p class="table-element">
+                                            Prezime: 
+                                        </p>
+                                    </div>
+                                    <div class="even-element">
+                                        <p class="table-element">
+                                            Mobilni: 
+                                        </p>
+                                    </div>
+                                    <div class="odd-element">
+                                        <p class="table-element">
+                                            Kućni broj: 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div *ngFor="let address of listOfAddressBook" class="table_wrapper">
+                                    <div class="table">
+                                        <div class="even-element">
+                                            <p class="table-element Main-Text">
+                                                {{address.firstName}} 
+                                            </p>
+                                        </div>
+                                        <div class="odd-element">
+                                            <p class="table-element">
+                                                {{address.lastName}}
+                                            </p>
+                                        </div>
+                                        <div class="even-element">
+                                            <p class="table-element">
+                                                {{address.homeNumber}}
+                                            </p>
+                                        </div>
+                                        <div class="odd-element">
+                                            <p class="table-element">
+                                                {{address.mobileNumber}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-passage-button-div">
+                            <button class="button button--primary" type="button" (click)="route('home')">
+                                <span class="regular-S-label regular-S-label--black">Nazad</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
