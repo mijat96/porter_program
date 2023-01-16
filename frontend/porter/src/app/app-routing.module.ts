@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddressBookComponent } from './pages/address-book/address-book.component';
+import { BanPassageComponent } from './pages/ban-passage/ban-passage.component';
 import { FinishPassageComponent } from './pages/finish-passage/finish-passage.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListPassagesComponent } from './pages/list-passages/list-passages.component';
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'address-book',
     component: AddressBookComponent
+  },
+  {
+    path: 'ban-passage',
+    component: BanPassageComponent
   }
 ];
 

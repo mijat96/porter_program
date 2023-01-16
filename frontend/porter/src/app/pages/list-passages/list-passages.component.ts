@@ -11,16 +11,23 @@ import { listOfPassages } from './passages-dummy';
 })
 export class ListPassagesComponent implements OnInit {
   listOfPassages: Passage[] = [];
+  userRole: string = "";
 
   constructor(private router: Router,
               private passageService: PassageService) { }
 
   ngOnInit(): void {
     this.passageService.getList().toPromise().then(x => this.listOfPassages = x || [] as Passage[]);
+    this.userRole = localStorage.getItem("userRole") || "";
   }
 
   passageDetails(passage: Passage){
-    this.router.navigate(['/finish-passage'], {queryParams: { 
+    let navigateToComponent = '/finish-passage';
+
+    if(this.userRole == "Porter Admin")
+      navigateToComponent = '/ban-passage';
+
+    this.router.navigate([navigateToComponent], {queryParams: { 
       _id: passage._id,
       shift: passage.shift,
       plateNumber: passage.plateNumber,

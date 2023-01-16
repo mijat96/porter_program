@@ -16,6 +16,7 @@ import { NewShiftReportComponent } from './pages/new-shift-report/new-shift-repo
 import { ShiftReportService } from './services/shift.report.service';
 import { AddressBookComponent } from './pages/address-book/address-book.component';
 import { AddressBookService } from './services/addressBook.service';
+import { BanPassageComponent } from './pages/ban-passage/ban-passage.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AddressBookService } from './services/addressBook.service';
     FinishPassageComponent,
     ListPassagesComponent,
     NewShiftReportComponent,
-    AddressBookComponent
+    AddressBookComponent,
+    BanPassageComponent
   ],
   imports: [
     BrowserModule,
